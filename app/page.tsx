@@ -30,8 +30,9 @@ const pillars = [
 export default function Home() {
   return (
     <main>
-      <Hero />
-      <HeroMotion />
+      <HeroMotion>
+        <Hero />
+      </HeroMotion>
 
       {/* Band 2 — The New Standard */}
       <section

@@ -328,8 +328,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
-      <HeroMotion />
     </main>
   );
 }

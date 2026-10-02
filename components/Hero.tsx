@@ -33,6 +33,7 @@ export default function Hero() {
         }}
       >
         <h1
+          data-hero-motion
           style={{
             fontSize: 68,
             lineHeight: 1.05,
@@ -45,6 +46,7 @@ export default function Hero() {
           {"Elite Systems for the Most Demanding Campaigns"}
         </h1>
         <p
+          data-hero-motion
           style={{
             fontSize: 18,
             color: "#ffffff",
@@ -55,6 +57,7 @@ export default function Hero() {
           {"Advertising systems connected by intelligence infrastructure"}
         </p>
         <a
+          data-hero-motion
           href="/contact"
           style={{
             marginTop: 28,

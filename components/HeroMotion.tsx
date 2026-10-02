@@ -3,7 +3,11 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-export default function HeroMotion() {
+export default function HeroMotion({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const ref = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -28,5 +32,9 @@ export default function HeroMotion() {
     return () => ctx.revert();
   }, []);
 
-  return <div ref={ref} style={{ display: "contents" }} />;
+  return (
+    <div ref={ref} style={{ display: "contents" }}>
+      {children}
+    </div>
+  );
 }
