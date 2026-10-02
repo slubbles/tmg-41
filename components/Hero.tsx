@@ -1,3 +1,6 @@
+/* HERO.tsx — copy to app/components/Hero.tsx (or src/components/Hero.tsx).
+   Render as the homepage first band. Do not shrink into a card. */
+
 export default function Hero() {
   return (
     <section
@@ -10,14 +13,23 @@ export default function Hero() {
       }}
     >
       <img
-        src="/photos/earth-night-lights.jpg"
-        alt="TMG — advertising systems connected by intelligence infrastructure"
+        src="/photos/hero-0.svg"
+        alt="TMG"
         style={{
           position: "absolute",
           inset: 0,
           width: "100%",
           height: "100%",
           objectFit: "cover",
+        }}
+      />
+      {/* the mark is dark ink on transparent — plate keeps fold contrast high */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background:
+            "linear-gradient(to top, rgba(20,17,13,0.78), rgba(20,17,13,0.12))",
         }}
       />
       <div
@@ -29,7 +41,6 @@ export default function Hero() {
           flexDirection: "column",
           justifyContent: "flex-end",
           padding: 96,
-          background: "linear-gradient(to top, rgba(20,16,12,0.72), rgba(20,16,12,0.12))",
         }}
       >
         <h1
