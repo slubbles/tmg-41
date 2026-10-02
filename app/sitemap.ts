@@ -1,0 +1,52 @@
+import type { MetadataRoute } from "next";
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const base = "https://tmg.agency";
+  const slugs = [
+    "",
+    "contact",
+    "platforms/velocity-ai",
+    "platforms/catalyst",
+    "platforms/genesis",
+    "platforms/oracle",
+    "case-studies",
+    "services/ai-powered-strategy",
+    "services/marketing-intelligence",
+    "services/creative-development",
+    "services/brand-architecture",
+    "services/performance-media",
+    "services/marketing-attribution",
+    "services/digital-transformation",
+    "services/content-strategy",
+    "services/customer-analytics",
+    "services/marketing-automation",
+    "services/fractional-cmo-services",
+    "industries/healthcare-life-sciences",
+    "industries/financial-services",
+    "industries/technology-saas",
+    "industries/real-estate",
+    "industries/energy-utilities",
+    "industries/retail-ecommerce",
+    "industries/manufacturing",
+    "industries/professional-services",
+    "industries/education",
+    "industries/non-profit",
+    "platforms/artificial-intelligence",
+    "platforms/machine-learning-models",
+    "platforms/predictive-analytics",
+    "platforms/data-science",
+    "platforms/crm-integration",
+    "platforms/api-development",
+    "platforms/real-time-optimization",
+    "platforms/ab-testing-platform",
+    "insights",
+    "growth-framework",
+    "blog",
+    "privacy",
+    "terms",
+  ];
+  return slugs.map((slug) => ({
+    url: `${base}/${slug}`.replace(/\/$/, ""),
+    lastModified: new Date(),
+  }));
+}
