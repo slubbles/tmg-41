@@ -29,12 +29,19 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const FEEDBACK_JOB_ID = "41";
+
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
       <body>{children}</body>
+      <script
+        src="https://genesis-web-woad.vercel.app/genesis-feedback.js"
+        data-job={FEEDBACK_JOB_ID}
+        defer
+      />
     </html>
   );
 }
