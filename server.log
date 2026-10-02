@@ -1,9 +1,0 @@
-   ▲ Next.js 15.5.25
-   - Local:        http://localhost:3000
-   - Network:      http://84.247.153.238:3000
-
- ✓ Starting...
-(node:778129) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
-(Use `node --trace-warnings ...` to show where the warning was created)
- ⚠ "next start" does not work with "output: standalone" configuration. Use "node .next/standalone/server.js" instead.
- ✓ Ready in 1482ms
